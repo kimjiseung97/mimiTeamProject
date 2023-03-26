@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <style>
+        /* 스크롤바 css */
+        .section::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .section::-webkit-scrollbar-track {
+            background-color: #e4e4e4;
+            border-radius: 100px;
+        }
+
+        .section::-webkit-scrollbar-thumb {
+            background-color: #d4aa70;
+            border-radius: 100px;
+        }
+
+        .section {
+            scrollbar-color: #D4AA70 #e4e4e4;
+        }
+
+        .section::-webkit-scrollbar-thumb {
+            background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+            box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+            border-radius: 100px;
+        }
+
+        /* 스크롤바 css */
+
+        /* 전체레이아웃 */
+        .wrapper {
+            width: 60%;
+            border: 1px solid #000;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+         /* 전체레이아웃 */
+
+        /* 상단부 헤더 */
+        .wrapper header {
+            /* border: 1px solid #000; */
+            height: 50px;
+        }
+        /* 상단부 헤더 */
+
+        /* 상단부 제목 */
+        .wrapper header h1 {
+            font-weight: 700;
+            text-align: center;
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        /* 상단부 제목 */
+
+
+        .wrapper .list-add {
+            display: flex;
+            height: 50px;
+        }
+
+        .wrapper .list-add input {
+            width: 90%;
+            font-size: 15px;
+            font-weight: 700;
+            background: #FFF;
+            border-radius: 15px;
+        }
+
+        input::-webkit-input-placeholder {
+            font-size: 90%;
+            text-align: center;
+            font-size: 20px;
+            line-height: 50;
+            font-weight: 700;
+        }
+
+        /* 버튼 스타일 */
+        a.button {
+            position: relative;
+            float: left;
+            width: 40px;
+            height: 30px;
+            padding: 0;
+            margin: 0 10px 10px auto;
+            font-weight: 50;
+            text-align: center;
+            line-height: 30px;
+            color: #FFF;
+            border-radius: 5px;
+            transition: all 0.2s;
+            font-size: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            /* border: 1px solid #000; */
+        }
+
+        /* 추가리스트 수정 삭제 버튼 */
+        a.button-inli {
+            width: 30px;
+            height: 20px;
+            padding: 0;
+            margin: 10px 10px 10px auto;
+            font-weight: 50;
+            text-align: center;
+            line-height: 20px;
+            color: #FFF;
+            border-radius: 5px;
+            transition: all 0.2s;
+            font-size: 10px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+         /* 추가리스트 수정 삭제 버튼 */
+
+
+        .btnRed {
+            background: rgb(255, 000, 051);
+        }
+
+        .btnRed.btnPush:hover {
+            box-shadow: 0px 0px 0px 0px #8b0101;
+        }
+
+        .btnRed.btnPush {
+            box-shadow: 0px 5px 0px 0px #8b0101;
+        }
+
+        .btnRed.btnBorder {
+            box-shadow: 0px 0px 0px 0px #8b0101;
+        }
+
+        .btnRed.btnBorder:hover {
+            box-shadow: 0px 0px 0px 5px #8b0101;
+        }
+
+        .btnPush:hover {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .btnBlueGreen.btnPush:hover {
+            box-shadow: 0px 0px 0px 0px #007144;
+        }
+
+        .btnBlueGreen {
+            background: #00AE68;
+        }
+
+        .btnBlueGreen.btnPush {
+            box-shadow: 0px 5px 0px 0px #007144;
+        }
+
+        .btnBlueGreen.btnBorder {
+            box-shadow: 0px 0px 0px 0px #21825B;
+        }
+
+        .btnBlueGreen.btnBorder:hover {
+            box-shadow: 0px 0px 0px 5px #21825B;
+        }
+        /* 버튼 스타일 */
+
+
+
+
+
+        /* to do list css */
+        .wrapper main {
+            display: flex;
+        }
+
+        .wrapper main .to-do-list {
+            border: 2px solid #ccc;
+            background: rgb(153, 153, 255);
+            width: 60%;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 15px;
+            padding: 10px;
+        }
+
+        .wrapper main .to-do-list ul {
+            overflow: auto;
+            height: 500px;
+        } 
+
+        .wrapper main .to-do-list ul .list {
+            height: 40px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            margin-top: 5px;
+            line-height: 40px;
+            background: rgb(255, 255, 133);
+            font-weight: 700;
+            font-size: 15px;
+            padding-left: 15px;
+            text-align: left;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+            position: relative;
+            align-items: stretch;
+        }
+
+        .wrapper main .to-do-list ul .list{
+            border: 1px solid #000;
+            display: flex;
+            height: 50px;
+            line-height: 50px;
+            flex-grow: 1;
+        }
+
+        .wrapper main aside{
+            border: 1px solid #000;
+            border-radius: 15px;
+            width: 40%;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header 제목 설정 -->
+        <header>
+            <h1>My To Do List</h1>
+        </header>
+        <!-- end header -->
+        <!-- list-add -->
+        <div class="list-add">
+            <input type="text" placeholder="일정을 입력하세요">
+            <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen">추가</a>
+            <a href="" title="Button push blue/green" class="button btnPush btnRed">수정</a>
+        </div>
+        <!-- end list-add -->
+        <!-- to do List -->
+        <main>
+            <div class="to-do-list">
+                <ul class="section">
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                    <div class="list">ㅇㅇㅇ <a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a><a href="" title="Button push blue/green" class="button btnPush btnBlueGreen button-inli">추가</a></div>
+                </ul>
+            </div>
+            <aside>
+
+            </aside>
+
+        </main>
+
+
+    </div>
+</body>
+
+</html

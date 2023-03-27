@@ -28,8 +28,11 @@
 /* 스크롤바 css */
 
 /* 전체레이아웃 */
+body{
+    display: flex;
+}
 .wrapper {
-    width: 924px;
+    width: 1500px;
     border: 1px solid #000;
     margin: 0 auto;
     margin-top: 100px;
@@ -42,6 +45,7 @@
 .wrapper header {
     /* border: 1px solid #000; */
     height: 50px;
+    width: 50%;
 }
 /* 상단부 헤더 */
 
@@ -59,6 +63,7 @@
 .wrapper .list-add {
     display: flex;
     height: 50px;
+    width: 50%;
 }
 
 .wrapper .list-add input {
@@ -169,12 +174,17 @@ a.button-inli {
 /* to do list css */
 .wrapper main {
     display: flex;
+    width: 48%;
+}
+.wrapper .right-container{
+    display: flex;
+    justify-content: space-between;
 }
 
 .wrapper main .to-do-list {
     border: 2px solid #ccc;
     background: rgb(153, 153, 255);
-    width: 60%;
+    width: 95%;
     text-align: center;
     border-radius: 15px;
     margin-top: 15px;
@@ -183,7 +193,7 @@ a.button-inli {
 
 .wrapper main .to-do-list ul {
     overflow: auto;
-    height: 500px;
+    height: 625px;
 } 
 
 .wrapper main .to-do-list ul .list {
@@ -216,10 +226,22 @@ a.button-inli {
     width: 90%;
 }
 
-.wrapper main aside{
+.wrapper .right-container aside{
     border: 1px solid #000;
     border-radius: 15px;
-    width: 40%;
+    width: 45%;
     margin-left: 15px;
     margin-top: 15px;
+    float: right;
+    height: 700px;
 }
+
+/* 클리어피스 속성 */
+.clearfix {
+    overflow: auto;
+  }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

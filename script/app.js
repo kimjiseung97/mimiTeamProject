@@ -22,7 +22,7 @@ function inputList(){
         //입력받은 값 집어넣기
         $listValue.textContent = $listAddbar.value;
         // $listContainer.appendChild($listValue);
-        $listContainer.innerHTML += "<div class='list section'><li>"+$listAddbar.value+"</li><a href='#' id='correct'title='Button push blue/green' class='button btnPush btnBlueGreen button-inli'>수정</a><a href='#' title='Button push blue/green' class='button btnPush btnRed button-inli'>삭제</a></div><br>";
+        $listContainer.innerHTML += "<li><div class='list section'>"+$listAddbar.value+"</div><a href='#' id='inli-modify' title='Button push blue/green' class='button btnPush btnBlueGreen button-inli'>수정</a><a href='#' id='inli-delete' title='Button push blue/green' class='button btnPush btnRed button-inli'>삭제</a></li>";
         $listAddbar.value = "";
         inlineButton();
         }
@@ -38,7 +38,7 @@ function inputEnterList(){
                     alert('할 일을 작성하세요');
                 }else{
                     const $listContainer = document.getElementById('#list-container');
-                    $listContainer.innerHTML += "<div class='list section'><li>"+$listAddbar.value+"</li><a href='#' id='inli-modify' title='Button push blue/green' class='button btnPush btnBlueGreen button-inli'>수정</a><a href='#' id='inli-delete' title='Button push blue/green' class='button btnPush btnRed button-inli'>삭제</a></div>";
+                    $listContainer.innerHTML += "<li><div class='list section'>"+$listAddbar.value+"</div><a href='#' id='inli-modify' title='Button push blue/green' class='button btnPush btnBlueGreen button-inli'>수정</a><a href='#' id='inli-delete' title='Button push blue/green' class='button btnPush btnRed button-inli'>삭제</a></li>";
                     $listAddbar.value = "";
                     inlineButton();
                 }
@@ -108,4 +108,5 @@ function inlineButton(){
     inputList();
     inputEnterList();
     resetList();
+    inlineButton();
 })();

@@ -17,8 +17,10 @@ body {
 /* 달력 사이즈 */
 .calendar {
     width: 600px;
-    margin: 50px;
+    margin: 20px auto 30px;
 }
+
+
 
 .header {
     display: flex;
@@ -86,13 +88,13 @@ body {
     border-left: 1px solid #ddd;
 }
 
-/* 일요일 빨간색 */
+/* 일요일 빨간색  설정 */
 .day:nth-child(7n + 1),
 .date:nth-child(7n + 1) {
     color: #D13E3E;
 }
 
-/* 토요일 파랑색 */
+/* 토요일 파랑색 설정 */
 .day:nth-child(7n),
 .date:nth-child(7n) {
     color: #396EE2;
@@ -129,15 +131,17 @@ body {
 
 
 /* 계산된 디데이 값이 나오기 전까지 안보이게 설정 */
-.hidden {
+.wrapper .dayCounter .hidden {
     display: none;
 }
 
+
 /* D-Day 계산기 제목 */
 .wrapper .dayCounter .title {
-    background: red;
+    /* background: red; */
     font-size: 40px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .wrapper .dayCounter #inputText {
@@ -147,21 +151,19 @@ body {
     height: 40px;
     position: relative; top: 50%; left: 50%; 
     transform: translate(-50%, -50%); 
-    
 }
-
 
 /* 시작일 & 종료일 */
 .wrapper .dayCounter #main {
     margin: 10px 0 30px;
-    background: yellow;
+    /* background: yellow; */
     text-align: center;
 }
 
 /* Click 버튼 */
 .wrapper .dayCounter #Enter {
     margin: 20px;
-    background:red;
+    background: dar;
     width: 100px;
 }
 
@@ -172,9 +174,10 @@ body {
 .wrapper .dayCounter span {
     font-size: 20px;
     font-weight: 700px;
-    background: green;
+    /* background: green; */
     display: block;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .wrapper .dayCounter .writeDay {

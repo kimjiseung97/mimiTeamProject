@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="/CSS/miniTeamProject.css" defer>
     <script src="/script/app.js" defer></script>
     <link rel="stylesheet" href="../CSS/calendar.css">
+    <link rel="stylesheet" href="../a.css">
+
+    
 
 </head>
 
 <body>
+
+
+
     <div class="wrapper">
         <!-- header 제목 설정 -->
         <header>
@@ -71,19 +77,26 @@
                     <div class="title">디데이(D-day) 계산기</div><br>
                     <span>중요한 날을 적어주세요!</span><br><br>
                     <input id="inputText" type="text" class="inputDay" placeholder="입력해주세요!">
-                    <div class="result"></div>
                     <form id="main">
                         시작일 <input id="day" type="date"><br><br>
                         종료일 <input id="Xday" type="date"><br>
-                        <input id="Enter" type="submit" value="Click!" />
+                        <input id="Enter" type="submit" value="Click!" onclick="addDayList()">
+                        <ul class="dayList">
+                            <!-- <div>추가한 디데이 들어갈 공간</div> -->
+                            <li class="list-day"></li>
+                            <div id="clock" class="hidden">
+                        </ul>
                         
                     </form>
-                    <div id="clock" class="hidden">
                     </div>
                 </div>
                 <script src="../script/day.js"></script>
                 
             </aside>
+
+
+
+
         </div>
 
     </div>

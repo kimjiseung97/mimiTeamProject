@@ -14,13 +14,21 @@ function mainHandle(event) {
 main.addEventListener("submit", mainHandle);
 
 
-const clock = document.querySelector("#clock");
+// const clock = document.querySelector("#clock");
 const Xday = document.querySelector("#Xday");   // 종료일 날짜
 const day = document.querySelector("#day");     // 시작일 날짜
+const inputText = document.getElementById(`inputText`); //입력받는 값
+
+// function writeDay() {
+//     document.getElementById(`Enter`).onclick= e => { const inputText = document.getElementById(`inputText`).value;
+//     document.querySelector(".result").textContent = inputText;
+// }
+// }
 
 function getDay() {
    const XdayValue = Xday.value;
    const dayValue = day.value;
+   const inputTextValue = inputText.value;
 
    const standard = new Date(dayValue);
    const target = new Date(XdayValue);
@@ -30,22 +38,22 @@ function getDay() {
   /*  const h = Math.floor((diff / (1000*60*60)) % 24);
    const m = Math.floor((diff / (1000*60)) % 60);
    const s = Math.floor(diff/ 1000 % 60); */
-   clock.innerHTML = `${d}일 입니다.`;  
+   clock.innerHTML = `${inputTextValue}날까지 ${d}일 남았습니다.`;  
 }
 
-// function writeDay() {
-   
-// }
-
-document.getElementById(`Enter`).onclick= e => { const inputText = document.getElementById(`inputText`).value;
-    document.querySelector(".result").textContent = inputText;
+function addDayList() {
+    const list = document.getElementById(`inputText`).value;
+    const newList = document.createElement(`li`);
+    newList.setAttribute(`id`, inputText);
+    const textNode = document.createTextNode(inputText);
+    newList.appendChild(textNode);
+    document.getElementById(`dayList`).appendChild(newList);
 }
-// getDay();
-// setInterval(getDay, 1000);
-// writeDay();
+
+
+getDay();
+setInterval(getDay, 1000);
 
 
 
-// 버튼 클릭시 함수 실행
-// $btn.onclick = e => {}
-// 클릭시 인풋의 밸류값
+

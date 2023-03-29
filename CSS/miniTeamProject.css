@@ -217,6 +217,11 @@ a.button-inli {
     position: relative;
     /* justify-content: space-between; */
 }
+.wrapper .right-container main .to-do-list ul li input{
+    width: 90%;
+    line-height: 40px;
+    margin: 0 auto;
+}
 
 
 /* .wrapper main .to-do-list ul .list{

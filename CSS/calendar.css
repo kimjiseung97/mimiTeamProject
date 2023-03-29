@@ -15,9 +15,10 @@ body {
 }
 
 /* 달력 사이즈 */
-.calendar {
+.wrapper .right-container aside .calendar{
     width: 600px;
     margin: 20px auto 30px;
+    height: 50%;
 }
 
 
@@ -131,6 +132,9 @@ body {
 
 
 /* 계산된 디데이 값이 나오기 전까지 안보이게 설정 */
+.wrapper .dayCounter{
+    height: 20%;
+}
 .wrapper .dayCounter .hidden {
     display: none;
 }

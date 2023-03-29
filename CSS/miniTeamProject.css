@@ -32,13 +32,14 @@ body{
     display: flex;
 }
 .wrapper {
-    width: 80%;
-    height: 50
+    width: 1500px;
     border: 1px solid #000;
     margin: 0 auto;
     margin-top: 100px;
     border-radius: 15px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
  /* 전체레이아웃 */
 
@@ -180,11 +181,6 @@ a.button-inli {
 .wrapper .right-container{
     display: flex;
     justify-content: space-between;
-    height: 0%;
-}
-
-.wrapper .right-container aside {
-    height: 70%;
 }
 
 .wrapper main .to-do-list {
@@ -206,6 +202,7 @@ a.button-inli {
     background: rgb(255, 255, 133);
     margin-top: 5px;
     border-radius: 5px;
+    word-break: break-all
 }
 .wrapper .right-container main .to-do-list ul li .list{
     height: 45px;
@@ -253,12 +250,9 @@ a.button-inli {
     height: 700px;
 }
 
-/* 클리어피스 속성 */
-.clearfix {
-    overflow: auto;
-  }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.wrapper footer{
+    border: 1px solid #000;
+    height: 30px;
+    margin-top: 15px;
+    width: 50%;
+}

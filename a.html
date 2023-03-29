@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>D-Day Counter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!--<script src="#" defer><script>-->
+  </head>
+  <body>
+    <h1>D-Day Counter</h1>
+    <div id="d-day-counter">
+      <dlv class="d-day-child-container">
+        <span id="days"></span>
+        <span>일</span>
+      </dlv>
+      <div class="d-day-child-container">
+        <span id="hours"></span>
+        <span>시간</span>
+      </div>
+      <div class="d-day-child-container">
+        <span id="minutes"></span>
+        <span>분</span>
+      </div>
+      <div class="d-day-child-container">
+        <span id="seconds"></span>
+        <span>초</span>
+      </div>
+    </div>
+    <div id="inform-msg"></div>
+    <div id="target-selector">
+      <input id="date-input-year" class="date-input" size="5" /> -
+      <input id="date-input-month" class="date-input" size="5" /> -
+      <input id="date-input-day" class="date-input" size="5" />
+    </div>
+
+    <button id="start-btn" onclick="starter()">카운트 다운 시작</button>
+    <button id="start-btn" onclick="resetTimer()">타이머 초기화</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

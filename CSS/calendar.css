@@ -124,3 +124,86 @@ body {
 }
 
 
+
+/* 디데이 */
+
+
+/* 계산된 디데이 값이 나오기 전까지 안보이게 설정 */
+.hidden {
+    display: none;
+}
+
+/* D-Day 계산기 제목 */
+.wrapper .dayCounter .title {
+    background: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+.wrapper .dayCounter #inputText {
+    /* background: green; */
+    display: block;
+    width: 80%;
+    height: 40px;
+    position: relative; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+}
+
+
+/* 시작일 & 종료일 */
+.wrapper .dayCounter #main {
+    margin: 10px 0 30px;
+    background: yellow;
+    text-align: center;
+}
+
+/* Click 버튼 */
+.wrapper .dayCounter #Enter {
+    margin: 20px;
+    background:red;
+    width: 100px;
+}
+
+.wrapper .dayCounter #clock {
+    text-align: center;
+}
+
+.wrapper .dayCounter span {
+    font-size: 20px;
+    font-weight: 700px;
+    background: green;
+    display: block;
+    text-align: center;
+}
+
+.wrapper .dayCounter .writeDay {
+    background: skyblue;
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 합본 사이즈 조정 */
+.wrapper .right-container {
+    
+}
+
+.wrapper .right-container aside {
+    width: 70%;
+    height: 60%;
+}

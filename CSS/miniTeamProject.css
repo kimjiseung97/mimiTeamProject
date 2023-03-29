@@ -24,7 +24,6 @@
     box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
     border-radius: 100px;
 }
-
 /* 스크롤바 css */
 
 /* 전체레이아웃 */
@@ -172,16 +171,18 @@ a.button-inli {
 
 
 /* to do list css */
-.wrapper main {
-    display: flex;
-    width: 48%;
-}
+
 .wrapper .right-container{
     display: flex;
     justify-content: space-between;
 }
 
-.wrapper main .to-do-list {
+.wrapper .right-container main {
+    display: flex;
+    width: 48%;
+}
+
+.wrapper .right-container main .to-do-list {
     border: 2px solid #ccc;
     background: rgb(153, 153, 255);
     width: 95%;
@@ -189,36 +190,38 @@ a.button-inli {
     border-radius: 15px;
     margin-top: 15px;
     padding: 10px;
+    height: 95%;
 }
 
-.wrapper main .to-do-list ul {
-    overflow: auto;
-    height: 625px;
+.wrapper .right-container main .to-do-list ul{
+    overflow-y:auto;
+    height: 680px;
 } 
 .wrapper .right-container main .to-do-list ul li{
     display: flex;
     background: rgb(255, 255, 133);
     margin-top: 5px;
     border-radius: 5px;
+    overflow-y:auto;
+    word-break: break-all;
 }
 .wrapper .right-container main .to-do-list ul li .list{
     height: 45px;
     width: 90%;
     /* border: 1px solid #000; */
     margin: 5px auto 5px;
-    line-height: 40px;
+    line-height: 45px;
     font-weight: 700;
     font-size: 15px;
     padding-left: 15px;
     text-align: left;
     display: flex;
     flex-wrap: nowrap;
-    overflow: auto;
+    overflow-y: auto;
     position: relative;
-    /* justify-content: space-between; */
 }
 .wrapper .right-container main .to-do-list ul li input{
-    width: 90%;
+    width: 70%;
     line-height: 40px;
     margin: 0 auto;
 }
@@ -246,13 +249,3 @@ a.button-inli {
     float: right;
     height: 700px;
 }
-
-/* 클리어피스 속성 */
-.clearfix {
-    overflow: auto;
-  }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }

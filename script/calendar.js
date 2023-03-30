@@ -1,5 +1,5 @@
 // 날짜 객체 생성(goToday 함수에서 date값을 재할당해야해서 const가 아닌 let으로 설정)
-let date = new Date();
+const date = new Date();
 
 const todolistCalender = () => {
 

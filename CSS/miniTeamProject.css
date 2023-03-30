@@ -197,7 +197,7 @@ a.button-inli {
     justify-content: space-between;
 }
 
-.wrapper main .to-do-list {
+.wrapper main .to-do-list{
     border: 2px solid #ccc;
     background: rgb(153, 153, 255);
     width: 95%;
@@ -205,6 +205,8 @@ a.button-inli {
     border-radius: 15px;
     margin-top: 15px;
     padding: 10px;
+    overflow: auto;
+    height: 900px;
 }
 
 .wrapper main .to-do-list ul {

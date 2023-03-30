@@ -37,7 +37,6 @@ function getDay() {
     /*  const h = Math.floor((diff / (1000*60*60)) % 24);
      const m = Math.floor((diff / (1000*60)) % 60);
      const s = Math.floor(diff/ 1000 % 60); */
-    clock.innerHTML = `${inputTextValue}날까지 ${d}일 남았습니다.`; //innerhtml로 삽입 
 }
 
 function addDayList() {
@@ -48,6 +47,7 @@ function addDayList() {
     const textNode = document.createTextNode(inputText);
     newList.appendChild(textNode);
     document.getElementById(`dayList`).appendChild(newList);
+    clock.innerHTML = `${inputTextValue}날까지 ${d}일 남았습니다.`; //innerhtml로 삽입 
 }
 
 

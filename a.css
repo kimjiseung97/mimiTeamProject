@@ -1,0 +1,81 @@
+@import url(CSS/reset.css);
+
+body {
+  /* width: 50%; */
+  /* padding: 20px; */
+}
+
+.dday_top .inputText {
+  display: block;
+  width: 40%;
+  height: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.rightT {
+  text-align: right;
+}
+.item {
+  padding: 25px;
+  border: 1px solid #606060;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.title {
+  font-size: 20px !important;
+  color: #45b198;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+.dday_component {
+        padding: 15px;
+        border: 1px solid #46776b;
+        border-radius: 15px;
+      }
+      .dday_top {
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-between;
+      }
+      .dday_mid {
+        text-align: center;
+        padding: 15px 0 0;
+        margin: 15px 0 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      .dday_mid > p:nth-child(2) {
+        font-size: 20px;
+        font-weight: bold;
+        height: 24px;
+      }
+      .dday_mid > p:nth-child(3) {
+        text-align: left;
+        color: #ffffff;
+        padding: 5px 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .dday_ul {
+        padding: 0 10px;
+      }
+      .dday_ul li {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .dday_ul li:not(:first-child) {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      .dday_ul li p:nth-child(1) {
+        font-weight: bold;
+      }

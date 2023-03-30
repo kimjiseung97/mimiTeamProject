@@ -29,11 +29,10 @@
 
 /* 전체레이아웃 */
 body{
-    display: flex;
+    /* display: flex; */
 }
 .wrapper {
     width: 80%;
-    height: 50
     border: 1px solid #000;
     margin: 0 auto;
     margin-top: 100px;
@@ -171,6 +170,7 @@ a.button-inli {
 
 
 
+/* background:yellow  ; */
 
 /* to do list css */
 .wrapper main {
@@ -180,7 +180,7 @@ a.button-inli {
 .wrapper .right-container{
     display: flex;
     justify-content: space-between;
-    height: 0%;
+    height: 100%;
 }
 
 .wrapper .right-container aside {

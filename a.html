@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+
+<body>
+
+    <!-- 기념일 계산   -->
+    <div class="item">
+        <h1 class="title">D_day 계산기</h1>
+        <div class="dday_component">
+            <div class="dday_top">
+                <div>
+                    <!-- <p class="mb10">중요한 날을 적어주세요.</p> -->
+                    <input type="date" id="user_dday" />
+                    <input type="text" class="inputText" placeholder="중요한 날을 적어주세요!">
+                </div>
+                <button type="button" onClick="calcDate()">D-day 계산하기</button>
+            </div>
+            <div class="dday_mid">
+                <p class="mb10">D_day까지</p>
+                <p class="mb10"></p>
+                <p>D_day 계산</p>
+            </div>
+            <div class="dday_bottom">
+                <ul class="dday_ul">
+                    <li>
+                        <p></p>
+                        <p id="dday_100"></p>
+                    </li>
+                    <!-- <li>
+                        <p>200일</p>
+                        <p id="dday_200"></p>
+                    </li>
+                    <li>
+                        <p>1년</p>
+                        <p id="dday_365"></p>
+                    </li>
+                    <li>
+                        <p>500일</p>
+                        <p id="dday_500"></p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="a.js"></script>
+
+</body>
+
+</html>

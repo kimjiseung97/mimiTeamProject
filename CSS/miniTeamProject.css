@@ -209,7 +209,6 @@ a.button-inli {
 
 .wrapper main .to-do-list ul {
     overflow: auto;
-    height: 625px;
 } 
 .wrapper .right-container main .to-do-list ul li{
     display: flex;

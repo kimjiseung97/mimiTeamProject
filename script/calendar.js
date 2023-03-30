@@ -90,9 +90,7 @@ const todolistCalender = () => {
 };
 
 todolistCalender();
-previousMonth();
-nextMonth();
-goToday();
+
 
 // 전월 이동
 function previousMonth(){
@@ -114,6 +112,3 @@ function goToday(){
     todolistCalender();
 };
 
-
-
-export {todolistCalender,previousMonth,nextMonth,goToday};

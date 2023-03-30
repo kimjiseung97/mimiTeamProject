@@ -1,0 +1,47 @@
+
+@import url(../../CSS/reset.css);
+
+
+/* *{
+    font-family:'Lucida Sans'; 
+    text-align: center;
+    position: relative;
+    top: 50px;
+    
+} */
+
+/* .box1{
+    right: 200%;
+    top: 200;
+    position: absolute;
+    float: right;
+    
+} */
+.box2{
+    direction: coloum;
+    columns: right;
+    display: flex;
+    width: 100%;
+    
+/* border: 1px solid red; */
+  
+} 
+
+ /* #date{
+    border: 1px solid #000; 
+    width: 100%;
+  
+}   */
+
+body{
+    /* background-color: rgb(61, 61, 61);  회색 */
+}
+.date{
+    font-size: 45px; 
+    color: #151515(255, 255, 255);  /* 흰색 */
+}
+.time{
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(30, 126, 210);  /*보라색 */
+}

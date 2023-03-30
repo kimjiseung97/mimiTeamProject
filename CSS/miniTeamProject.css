@@ -60,18 +60,26 @@ body{
 /* 상단부 헤더 */
 .wrapper header {
     /* border: 1px solid #000; */
-    height: 50px;
-    width: 50%;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: yellow; */
+    
 }
 /* 상단부 헤더 */
 
 /* 상단부 제목 */
 .wrapper header h1 {
     font-weight: 700;
-    text-align: center;
     font-size: 30px;
     line-height: 50px;
     margin-bottom: 15px;
+    width: 40%;
+    padding: 0 auto;
+    /* background: #8b0101; */
+    padding-left: 100px;
 }
 /* 상단부 제목 */
 
@@ -79,17 +87,25 @@ body{
 .wrapper .list-add {
     display: flex;
     height: 50px;
-    width: 50%;
+    width: 100%;
+    /* border: 1px solid #000; */
 }
 
 .wrapper .list-add input {
-    width: 90%;
+    width: 40%;
     font-size: 15px;
     font-weight: 700;
     background: #FFF;
     border-radius: 15px;
 }
-
+.wrapper .list-add div{
+    width: 65%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    color: #D13E3E;
+}
 input::-webkit-input-placeholder {
     font-size: 90%;
     text-align: center;
@@ -272,10 +288,6 @@ a.button-inli {
 
 
 
-
-@import url(reset.css);
-
-
 /* 달력 사이즈 */
 .wrapper .right-container aside .calendar{
     width: 600px;
@@ -444,4 +456,31 @@ a.button-inli {
 .wrapper .right-container aside {
     width: 70%;
     height: 60%;
+}
+
+/* 우측 시계 css */
+
+.wrapper header .box1{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.wrapper header .box1 .box2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.wrapper header .box1 .box2 .date{
+    font-size: 30px; 
+    width: 50%;
+    text-align: left;
+}
+.wrapper header .box1 .box2 .time{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(30, 126, 210);  /*보라색 */
+    width: 50%;
+    text-align: center;
 }

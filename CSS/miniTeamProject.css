@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    margin: 50px
 }
 /* 스크롤바 css */
 .section::-webkit-scrollbar {
@@ -45,12 +45,13 @@ body{
     /* display: flex; */
 }
 .wrapper {
-    width: 1500px;
+    width: 800px;
+    /* width: 50%; */
     border: 1px solid #000;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     /* background-image: linear-gradient(180deg, #d0368b 0%, #708AD4 99%); */
@@ -73,13 +74,12 @@ body{
 /* 상단부 제목 */
 .wrapper header h1 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 60px;
     line-height: 50px;
-    margin-bottom: 15px;
     width: 40%;
     padding: 0 auto;
     /* background: #8b0101; */
-    padding-left: 100px;
+    /* padding-left: 0px; */
 }
 /* 상단부 제목 */
 
@@ -152,6 +152,13 @@ a.button-inli {
 }
  /* 추가리스트 수정 삭제 버튼 */
 
+ .wrapper .list-add #addButton {
+    margin-top: 7px;
+    margin-left: 10px;
+ }
+ .wrapper .list-add #resetButton {
+    margin-top: 7px;
+ }
 
 .btnRed {
     background: rgb(255, 000, 051);
@@ -278,6 +285,8 @@ a.button-inli {
     margin-top: 15px;
     float: right;
     height: 700px;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper footer{
@@ -288,12 +297,24 @@ a.button-inli {
 }
 
 
-
 /* 달력 사이즈 */
+.wrapper .right-container aside {
+    height: 30%;
+}
+
+
 .wrapper .right-container aside .calendar{
-    width: 600px;
-    margin: 20px auto 30px;
-    height: 50%;
+    width: 80%;
+    margin: 10px auto 20px;
+     /* height: 30%;  */
+}
+.wrapper .right-container aside .calendar .main{
+    height: 50%; 
+}
+.wrapper .right-container aside .calendar .main .days .day .dates{
+    height: 10px;
+    background-color:  #708AD4;
+    
 }
 .wrapper .right-container aside .calendar .header{
     display: flex;
@@ -302,7 +323,7 @@ a.button-inli {
 
 /* 왼쪽 상단 년/월 */
 .year-month {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* 오른쪽 상단 버튼 테두리 */
@@ -345,19 +366,34 @@ a.button-inli {
 .dates {
     display: flex;
     flex-flow: row wrap;
-    height: 600px;
-    border-top: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    
+    /* border-top: 1px solid #ddd; */
+    /* border-right: 1px solid #ddd;  */
+    font-weight: 700;
+    border-radius: 15px;
+    font-size: 20px;
 }
 
 /* 날짜 */
+.wrapper .calendar {
+    margin: 0 ;
+}
+.wrapper .calendar .main {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+   background: yellow;
+}
+
+.wrapper .calendar .days {
+    /* border: 1px solid #000; */
+}
 .date {
     width: calc(100% / 7);
     padding: 15px;
     text-align: right;
     border-bottom: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #ddd; 
+    border-radius: 10px;
+    
 }
 
 /* 일요일 빨간색  설정 */
@@ -399,8 +435,22 @@ a.button-inli {
 
 
 
-/* 디데이 */
 
+
+
+
+
+/* 디데이 */
+.wrapper .right-container {
+    /* height: 50%; */
+}
+
+
+.wrapper .right-container aside .item {
+    margin: 0;
+    padding: 0 auto;
+    height: 10%;
+}
 
 /* 계산된 디데이 값이 나오기 전까지 안보이게 설정 */
 .wrapper .dayCounter{
@@ -413,10 +463,11 @@ a.button-inli {
 
 /* D-Day 계산기 제목 */
 .wrapper .dayCounter .title {
-    /* background: red; */
+    background: red;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .wrapper .dayCounter #inputText {
@@ -473,15 +524,18 @@ a.button-inli {
     width: 100%;
 }
 
-.wrapper header .box1 .box2 .date{
-    font-size: 30px; 
-    width: 50%;
-    text-align: left;
+ .wrapper .box1 .box2 #date{
+    font-size: 20px; 
+    width: 80%;
+    text-align: right;
+    border: 1px solid #fff;;
 }
 .wrapper header .box1 .box2 .time{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     color: rgb(30, 126, 210);  /*보라색 */
     width: 50%;
     text-align: center;
+    margin-top: 10px;
+    margin-left: 40px;
 }

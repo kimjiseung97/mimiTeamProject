@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/miniTeamProject.css" defer>
-    <script src="/script/app.js" defer></script>
-    <link rel="stylesheet" href="../CSS/calendar.css">
-    <link rel="stylesheet" href="../a.css">
-
-    
+    <script type="module" src="/script/app.js" defer></script>
+    <!-- <link rel="stylesheet" href="../CSS/calendar.css" defer> -->
+    <!-- <link rel="stylesheet" href="../clock/main.css"> -->
+    <script src="/script/main.js" defer></script>
 
 </head>
 
@@ -23,13 +22,21 @@
         <!-- header 제목 설정 -->
         <header>
             <h1>My To Do List</h1>
+            <!-- 시간 / 날짜 -->
+            <div class="box1">
+                <div class="box2">
+                    <div id="time" class="time"></div>
+                    <div id="date" class="date"></div>
+                </div>
+            </div>
         </header>
         <!-- end header -->
         <!-- list-add -->
         <div class="list-add">
             <input type="text" placeholder="일정을 입력하세요" id="list-add-bar">
             <a href="#" id="addButton" title="Button push blue/green" class="button btnPush btnBlueGreen">추가</a>
-            <a href="#" id="resetButton" title="Button push blue/green" class="button btnPush btnRed">수정</a>
+            <a href="#" id="resetButton" title="Button push blue/green" class="button btnPush btnRed">초기화</a>
+            <div>calender</div>
         </div>
         <!-- end list-add -->
         <!-- to do List -->
@@ -69,7 +76,7 @@
                         <div class="dates"></div>
                     </div>
                 </div>
-                <script src="../script/calendar.js"></script>
+                <!-- <script src="../script/calendar.js"></script> -->
 
 
                 <!-- 디데이 계산기 -->
@@ -86,18 +93,18 @@
                             <li class="list-day"></li>
                             <div id="clock" class="hidden">
                         </ul>
-                        
+
                     </form>
-                    </div>
                 </div>
-                <script src="../script/day.js"></script>
-                
-            </aside>
-
-
-
-
         </div>
+        <script src="../script/day.js"></script>
+
+        </aside>
+
+
+
+
+    </div>
 
     </div>
 </body>

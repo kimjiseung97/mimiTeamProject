@@ -45,7 +45,7 @@ body{
     /* display: flex; */
 }
 .wrapper {
-    width: 800px;
+    width: 1200px;
     /* width: 50%; */
     border: 1px solid #000;
     margin: 0 auto;
@@ -104,7 +104,8 @@ body{
     text-align: center;
     font-size: 30px;
     line-height: 50px;
-    color: #D13E3E;
+    /* background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%); */
+    color: rgba(35, 185, 211, 0.788);
 }
 input::-webkit-input-placeholder {
     font-size: 90%;
@@ -219,9 +220,10 @@ a.button-inli {
 .wrapper .right-container{
     display: flex;
     justify-content: space-between;
+    height: 800px;
 }
 
-.wrapper main .to-do-list {
+.wrapper main .to-do-list{
     border: 2px solid #ccc;
     background: rgb(153, 153, 255);
     width: 95%;
@@ -229,11 +231,13 @@ a.button-inli {
     border-radius: 15px;
     margin-top: 15px;
     padding: 10px;
+    height: 98%;
+    overflow: auto;
 }
 
-.wrapper main .to-do-list ul {
+/* .wrapper main .to-do-list ul{
     overflow: auto;
-} 
+}  */
 .wrapper .right-container main .to-do-list ul li{
     display: flex;
     background: rgb(255, 255, 133);
@@ -259,7 +263,7 @@ a.button-inli {
 }
 .wrapper .right-container main .to-do-list ul li input{
     width: 90%;
-    line-height: 40px;
+    line-height: 20px;
     margin: 0 auto;
 }
 
@@ -278,35 +282,23 @@ a.button-inli {
 } */
 
 .wrapper .right-container aside{
-    border: 1px solid #000;
+    border: 2px solid #ccc;
     border-radius: 15px;
     width: 45%;
     margin-left: 15px;
     margin-top: 15px;
     float: right;
-    height: 700px;
     display: flex;
     flex-direction: column;
 }
 
-.wrapper footer{
-    border: 1px solid #000;
-    height: 30px;
-    margin-top: 15px;
-    width: 50%;
-}
-
-
 /* 달력 사이즈 */
-.wrapper .right-container aside {
-    height: 30%;
-}
-
 
 .wrapper .right-container aside .calendar{
     width: 80%;
     margin: 10px auto 20px;
      /* height: 30%;  */
+    height: 90%;
 }
 .wrapper .right-container aside .calendar .main{
     height: 50%; 
@@ -363,7 +355,7 @@ a.button-inli {
 }
 
 /* 날짜들 간격 */
-.dates {
+.dates{
     display: flex;
     flex-flow: row wrap;
     /* border-top: 1px solid #ddd; */
@@ -378,13 +370,14 @@ a.button-inli {
     margin: 0 ;
 }
 .wrapper .calendar .main {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 10px;
-   background: yellow;
+    /* background: yellow; */
 }
 
 .wrapper .calendar .days {
     /* border: 1px solid #000; */
+    height: 10px;
 }
 .date {
     width: calc(100% / 7);
@@ -393,7 +386,7 @@ a.button-inli {
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd; 
     border-radius: 10px;
-    
+ 
 }
 
 /* 일요일 빨간색  설정 */
@@ -416,7 +409,7 @@ a.button-inli {
 /* 당일 날짜 */
 .today {
     position: relative;
-    color: #FFFFFF; 
+    color: rgb(153, 153, 255); 
 }
 
 /* 당일 날짜 표시 박스 */
@@ -462,14 +455,22 @@ a.button-inli {
 
 
 /* D-Day 계산기 제목 */
-.wrapper .dayCounter .title {
-    background: red;
-    font-size: 40px;
+.wrapper .right-container aside .item{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.wrapper .right-container aside .item .title{
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    font-size: 0.2em;
 }
 
+.wrapper .right-container aside .item .dday_component{
+    margin-top: 10px;
+}
+.wrapper .right-container aside .item .dday_component .dday_top div .inputText{
+    margin:10px auto;
+}
 .wrapper .dayCounter #inputText {
     /* background: green; */
     display: block;

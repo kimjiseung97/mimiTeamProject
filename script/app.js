@@ -1,7 +1,5 @@
 import{inputList,inputEnterList} from './input.js';
 import{resetList} from './reset.js'
-import{todolistCalender,previousMonth,nextMonth,goToday} from './calendar.js'
-
 // //리스트 입력 받는 함수(버튼클릭 이벤트)
 // function inputList() {
 //     const $listAddbar = document.getElementById('list-add-bar');
@@ -202,9 +200,5 @@ import{todolistCalender,previousMonth,nextMonth,goToday} from './calendar.js'
     inputList();
     inputEnterList();
     resetList();
-    todolistCalender();
-    previousMonth();
-    goToday();
-    nextMonth();
 })();
 

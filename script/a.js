@@ -14,14 +14,15 @@ function calcDate() {
       '.dday_mid > p:nth-child(2)'
     ).innerHTML = `[ ${inputText} ] 까지 ${gap_day}일`;
 
-    /* 앞으로 ___일 */
-    var count = [100, 200, 365, 500];
-    for (var i = 0; i < count.length; i++) {
-      var days = calcDateAdd(dday, count[i], days);
-      document.querySelector(
-        '#dday_' + count[i]
-      ).innerHTML = `${days[0]}년 ${days[1]}월 ${days[2]}일`;
-    }
+
+    const days = calcDateAdd(dday, 10,);  
+
+    const $addDDay = document.createElement('li');
+    $addDDay.innerHTML = `[ ${inputText} ] 까지 ${gap_day}일`;
+
+    const $dday_ul = document.querySelector('.dday_ul');
+    $dday_ul.appendChild($addDDay);
+
   } else {
     alert('날짜를 선택해주세요!');
   }
@@ -38,7 +39,3 @@ function calcDateAdd(x, y, z) {
     add_new.getDate(),
   ]);
 }
-
-
-
-

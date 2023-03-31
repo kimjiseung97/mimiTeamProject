@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="/CSS/miniTeamProject.css" defer>
     <script type="module" src="/script/app.js" defer></script>
     <!-- <link rel="stylesheet" href="../CSS/calendar.css" defer> -->
-
-
+    <!-- <link rel="stylesheet" href="../clock/main.css"> -->
+    <script src="/script/main.js" defer></script>
+    <script src="/script/a.js" defer></script>
 
 </head>
 
@@ -21,7 +22,14 @@
     <div class="wrapper">
         <!-- header 제목 설정 -->
         <header>
-            <h1>My To Do List</h1>
+            <h1>To Do List</h1>
+            <!-- 시간 / 날짜 -->
+            <div class="box1">
+                <div class="box2">
+                    <div id="time" class="time"></div>
+                    <div id="date" class="date"></div>
+                </div>
+            </div>
         </header>
         <!-- end header -->
         <!-- list-add -->
@@ -29,6 +37,7 @@
             <input type="text" placeholder="일정을 입력하세요" id="list-add-bar">
             <a href="#" id="addButton" title="Button push blue/green" class="button btnPush btnBlueGreen">추가</a>
             <a href="#" id="resetButton" title="Button push blue/green" class="button btnPush btnRed">초기화</a>
+            <div>calender</div>
         </div>
         <!-- end list-add -->
         <!-- to do List -->
@@ -36,10 +45,8 @@
         <div class="right-container">
             <main>
                 <div class="to-do-list section">
-                    <ul class="section" id="#list-container">
-                        <!-- <li><div class='list section'>"+$listAddbar.value+"<a href='#' id='inli-modify' title='Button push blue/green' class='button btnPush btnBlueGreen button-inli'>수정</a><a href='#' id='inli-delete' title='Button push blue/green' class='button btnPush btnRed button-inli'>삭제</a></div></li> -->
-                        안녕하세요
-                        <!-- <div class='list section'><li>to do list 들어갈 공간입니다!!</li><a href='#' title='Button push blue/green' class='button btnPush btnBlueGreen button-inli'>추가</a><a href='#' title='Button push blue/green' class='button btnPush btnBlueGreen button-inli'>추가</a></div> -->
+                    <ul class="section list section" id="#list-container">
+                        <!-- 들어갈 공간  -->
                     </ul>
                 </div>
             </main>
@@ -73,31 +80,32 @@
 
 
                 <!-- 디데이 계산기 -->
-                <div class="dayCounter">
-                    <div class="title">디데이(D-day) 계산기</div><br>
-                    <span>중요한 날을 적어주세요!</span><br><br>
-                    <input id="inputText" type="text" class="inputDay" placeholder="입력해주세요!">
-                    <form id="main">
-                        시작일 <input id="day" type="date"><br><br>
-                        종료일 <input id="Xday" type="date"><br>
-                        <input id="Enter" type="submit" value="Click!" onclick="addDayList()">
-                        <ul class="dayList">
-                            <!-- <div>추가한 디데이 들어갈 공간</div> -->
-                            <li class="list-day"></li>
-                            <div id="clock" class="hidden">
-                        </ul>
 
-                    </form>
+                <!-- 기념일 계산   -->
+                <div class="item">
+                    <p class="title">D_day 계산기</p>
+                    <div class="dday_component">
+                        <div class="dday_top">
+                            <div>
+                                <!-- <p class="mb10">중요한 날을 적어주세요.</p> -->
+                                <input type="date" id="user_dday"/>
+                                <input type="text" class="inputText" placeholder="중요한 날을 적어주세요!">
+                            </div>
+                            <button type="button" onClick="calcDate()">Click!</button>
+                        </div>
+                        <div class="dday_mid">
+                            <p class="mb10">&nbsp;</p>
+                            <p class="mb10"></p>
+                        </div>
+                        <div class="dday_bottom">
+                            <ul class="section dday_ul">
+                               
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </aside>
         </div>
-        <script src="../script/day.js"></script>
-
-        </aside>
-
-
-
-
-    </div>
 
     </div>
 </body>

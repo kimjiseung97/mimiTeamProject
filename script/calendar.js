@@ -1,5 +1,5 @@
 // 날짜 객체 생성(goToday 함수에서 date값을 재할당해야해서 const가 아닌 let으로 설정)
-const date = new Date();
+let date = new Date();
 
 const todolistCalender = () => {
 
@@ -90,25 +90,30 @@ const todolistCalender = () => {
 };
 
 todolistCalender();
-
+previousMonth();
+nextMonth();
+goToday();
 
 // 전월 이동
-function previousMonth(){
+const previousMonth =e =>{
     date.setDate(1);
     date.setMonth(date.getMonth() - 1);
     todolistCalender();
 };
 
 // 다음달 이동
-function nextMonth(){
+const nextMonth =e=>{
     date.setDate(1);
     date.setMonth(date.getMonth() + 1);
     todolistCalender();
 };
 
 // 오늘 날짜 이동
-function goToday(){
+const goToday =e=>{
     date = new Date();
     todolistCalender();
 };
 
+
+
+export {todolistCalender,previousMonth,nextMonth,goToday};
